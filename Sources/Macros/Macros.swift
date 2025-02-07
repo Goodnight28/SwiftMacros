@@ -15,3 +15,9 @@ public macro AutoHashable() = #externalMacro(module: "SwiftMacrosLib", type: "Au
 
 @attached(peer, names: arbitrary)
 public macro ExcludeHashable() = #externalMacro(module: "SwiftMacrosLib", type: "EmptyPeerMacro")
+
+@attached(member, names: arbitrary)
+public macro AutoInit() = #externalMacro(module: "SwiftMacrosLib", type: "AutoInitMacro")
+
+@attached(peer, names: arbitrary)
+public macro ExcludeInit() = #externalMacro(module: "SwiftMacrosLib", type: "EmptyPeerMacro")

@@ -7,6 +7,7 @@ struct Plugin: CompilerPlugin {
         AutoChangableMacro.self,
         AutoEquatableMacro.self,
         AutoHashableMacro.self,
+        AutoInitMacro.self,
         EmptyPeerMacro.self,
     ]
 }
